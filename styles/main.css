@@ -16,13 +16,18 @@ li { list-style: none; }
  */
 
 body {
-    background: #f2f2f2;
+    background: #ffffff;
     font-family: "proxima-nova", 'Helvetica Neue', Helvetica-Neue, Helvetica, Arial, sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
 }
 
 p {
-    color: #4d4d4d;
+    color: #19272d;
     font-size: 18px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
     line-height: 32px;
     margin: 0 0 30px 0;
 }
@@ -48,6 +53,7 @@ h1 {
     height: 60px;
     margin: auto;
     text-indent: -9999px;
+    text-rendering: optimizeLegibility;
     width: 270px;
 }
 
@@ -55,7 +61,9 @@ h2  {
     color: #FFFFFF;
     display: block;
     font-size: 20px;
+    font-weight: bold;
     margin-bottom: 25px;
+    text-rendering: optimizeLegibility;
 }
 
 h2 span {
@@ -68,6 +76,7 @@ h3 {
     font-size: 18px;
     line-height: 32px;
     margin:0 0 0px 0;
+    text-rendering: optimizeLegibility;
 }
 
 h3.opensource {
@@ -76,12 +85,14 @@ h3.opensource {
     display: inline;
     font-weight: normal;
     padding: 2px 6px;
+    -webkit-font-smoothing: subpixel-antialiased;
 }
 
 /* Menu */
 
 #menu {
     padding-bottom: 10px;
+    margin-top: 20px;
     margin-bottom: 0px;
     text-align: center;
 }
@@ -94,14 +105,14 @@ h3.opensource {
 
 #menu a, #menu a:visited {
     border-bottom: 1px dotted #444444;
-    color: #1F93D0;
+    color: #41b3ee;
     font-size: 20px;
     margin: 0px 20px;
     text-decoration: none;
 }
 
 #menu a:hover, #menu a:active {
-    color: #444444;
+    color: #19272d;
     text-decoration: none;
 }
 
@@ -112,10 +123,11 @@ h3.opensource {
     width: 961px;
 }
 
-.highlight {
+span.highlight {
     background: #FF4200;
     color: #FFFFFF;
     padding: 1px 5px;
+    -webkit-font-smoothing: subpixel-antialiased;
 }
 
 .opensource-list {
@@ -172,6 +184,23 @@ a.screenshot:hover, a.screenshot:active {
 
 /* Links */
 
+a {
+    outline:none;
+    text-decoration:none;
+    -webkit-transition-property:background-color, color;
+    -moz-transition-property:background-color, color;
+    -o-transition-property:background-color, color;
+    transition-property:background-color, color;
+    -webkit-transition-duration:.25s;
+    -moz-transition-duration:.25s;
+    -o-transition-duration:.25s;
+    transition-duration:.25s;
+}
+
+a:active {
+    outline:none;
+}
+
 p a:link, p a:visited {
     border-bottom: 1px dotted #444444;
     color: #FF4200;
@@ -183,6 +212,29 @@ p a:hover, p a:active {
     background: #444444;
     color: #FFFFFF;
     text-decoration: none;
+}
+
+.blog h2 a, .blog h2 a:visited {
+    color: #ff4200;
+    text-decoration: none;
+    line-height: 36px;
+}
+
+.blog h2 a:hover, .blog h2 a:active {
+    color: #444444;
+}
+
+/* Blog */
+
+.blog h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.blog p {
+    font-size: 18px;
+    text-rendering: optimizeLegibility;
 }
 
 /* Pygments */
