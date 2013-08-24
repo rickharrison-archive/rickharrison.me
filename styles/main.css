@@ -34,27 +34,65 @@ p {
 
 #header {
     background: #f5f5f5;
-    border-bottom: 1px solid #e2e2e2;
-    height: 80px;
-    padding: 20px 0px 0px 0px;
+    border-right: 1px solid #e2e2e2;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 320px;
 }
 
-#border {
-    background: #FFFFFF;
-    display: block;
-    height: 1px;
+.header-wrap {
+    margin-top: -280px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
     width: 100%;
+}
+
+.header-wrap p {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+.header-logo {
+    margin-bottom: 15px;
+}
+
+.header-social {
+    text-align: center;
+}
+
+.header-social li {
+    display: inline-block;
+    padding: 3px;
+}
+
+.header-blog, .header-blog:visited {
+    border: 5px solid #2e3b40;
+    border-radius: 25px;
+    color: #2e3b40;
+    display: inline-block;
+    font-weight: bold;
+    margin-top: 40px;
+    padding: 6px 15px;
+    text-decoration: none;
+}
+
+.header-blog:hover, .header-blog:active {
+    border-color: #ff4200;
+    color: #ff4200;
 }
 
 /* Headers */
 
 h1 {
-    background: url('../images/logo.png');
-    height: 60px;
-    margin: auto;
-    text-indent: -9999px;
+    color: #2e3b40;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 5px;
     text-rendering: optimizeLegibility;
-    width: 270px;
 }
 
 h2  {
@@ -91,6 +129,7 @@ h3.opensource {
 /* Menu */
 
 #menu {
+    display: none;
     padding-bottom: 10px;
     margin-top: 20px;
     margin-bottom: 0px;
@@ -119,8 +158,12 @@ h3.opensource {
 /* Sections */
 
 .section   {
-    margin: 30px auto 50px auto;
+    margin: 30px 0 50px 365px;
     width: 961px;
+}
+
+#work {
+    margin-top: 40px;
 }
 
 span.highlight {
@@ -187,10 +230,10 @@ a.screenshot:hover, a.screenshot:active {
 a {
     outline:none;
     text-decoration:none;
-    -webkit-transition-property:background-color, color;
-    -moz-transition-property:background-color, color;
-    -o-transition-property:background-color, color;
-    transition-property:background-color, color;
+    -webkit-transition-property:background-color, color, border-color;
+    -moz-transition-property:background-color, color, border-color;
+    -o-transition-property:background-color, color, border-color;
+    transition-property:background-color, color, border-color;
     -webkit-transition-duration:.25s;
     -moz-transition-duration:.25s;
     -o-transition-duration:.25s;
@@ -300,3 +343,71 @@ p a:hover, p a:active {
 .vg { color: #19177C } /* Name.Variable.Global */
 .vi { color: #19177C } /* Name.Variable.Instance */
 .il { color: #666666 } /* Literal.Number.Integer.Long */
+
+/*
+ * Social Icons
+ */
+
+@charset "UTF-8";
+
+/*
+* Symbolset
+* www.symbolset.com
+* Copyright © 2013 Oak Studios LLC
+*
+* Upload this file to your web server
+* and place this within your <head> tags.
+* <link href="webfonts/ss-social-circle.css" rel="stylesheet" />
+*/
+
+@font-face {
+  font-family: "SSSocialCircle";
+  src: url('/images/ss-social-circle.eot');
+  src: url('/images/ss-social-circle.eot?#iefix') format('embedded-opentype'),
+       url('/images/ss-social-circle.woff') format('woff'),
+       url('/images/ss-social-circle.ttf')  format('truetype'),
+       url('/images/ss-social-circle.svg#SSSocialCircle') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* This triggers a redraw in IE to Fix IE8's :before content rendering. */
+html:hover [class^="ss-"]{-ms-zoom: 1;}
+
+.ss-icon, .ss-icon.ss-social-circle,
+[class^="ss-"]:before, [class*=" ss-"]:before,
+[class^="ss-"].ss-social-circle:before, [class*=" ss-"].ss-social-circle:before,
+[class^="ss-"].right:after, [class*=" ss-"].right:after,
+[class^="ss-"].ss-social-circle.right:after, [class*=" ss-"].ss-social-circle.right:after {
+  font-family: "SSSocialCircle";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-rendering: optimizeLegibility;
+  white-space: nowrap;
+  /*-webkit-font-feature-settings: "liga"; Currently broken in Chrome >= v22. Falls back to text-rendering. Safari is unaffected. */
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  -o-font-feature-settings: "liga";
+  font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+}
+
+a.ss-icon {
+    color: #2e3b40;
+    cursor: pointer;
+}
+
+a.ss-icon:hover, a.ss-icon:active {
+    color: #ff4200;
+}
+
+[class^="ss-"].right:before,
+[class*=" ss-"].right:before{display:none;content:'';}
+
+.ss-facebook:before,.ss-facebook.right:after{content:''}.ss-twitter:before,.ss-twitter.right:after{content:''}.ss-linkedin:before,.ss-linkedin.right:after{content:''}.ss-googleplus:before,.ss-googleplus.right:after{content:''}.ss-appdotnet:before,.ss-appdotnet.right:after{content:''}.ss-zerply:before,.ss-zerply.right:after{content:''}.ss-reddit:before,.ss-reddit.right:after{content:''}.ss-steam:before,.ss-steam.right:after{content:''}.ss-tumblr:before,.ss-tumblr.right:after{content:''}.ss-wordpress:before,.ss-wordpress.right:after{content:''}.ss-blogger:before,.ss-blogger.right:after{content:''}.ss-posterous:before,.ss-posterous.right:after{content:''}.ss-quora:before,.ss-quora.right:after{content:''}.ss-youtube:before,.ss-youtube.right:after{content:''}.ss-vimeo:before,.ss-vimeo.right:after{content:''}.ss-vine:before,.ss-vine.right:after{content:''}.ss-letterboxd:before,.ss-letterboxd.right:after{content:''}.ss-flickr:before,.ss-flickr.right:after{content:''}.ss-instagram:before,.ss-instagram.right:after{content:''}.ss-500px:before,.ss-500px.right:after{content:''}.ss-etsy:before,.ss-etsy.right:after{content:''}.ss-pinterest:before,.ss-pinterest.right:after{content:''}.ss-svpply:before,.ss-svpply.right:after{content:''}.ss-readmill:before,.ss-readmill.right:after{content:''}.ss-dropbox:before,.ss-dropbox.right:after{content:''}.ss-pinboard:before,.ss-pinboard.right:after{content:''}.ss-delicious:before,.ss-delicious.right:after{content:''}.ss-dribbble:before,.ss-dribbble.right:after{content:''}.ss-behance:before,.ss-behance.right:after{content:''}.ss-github:before,.ss-github.right:after{content:''}.ss-octocat:before,.ss-octocat.right:after{content:''}.ss-stackoverflow:before,.ss-stackoverflow.right:after{content:''}.ss-paypal:before,.ss-paypal.right:after{content:''}.ss-kickstarter:before,.ss-kickstarter.right:after{content:''}.ss-foursquare:before,.ss-foursquare.right:after{content:''}.ss-yelp:before,.ss-yelp.right:after{content:''}.ss-skype:before,.ss-skype.right:after{content:''}.ss-rdio:before,.ss-rdio.right:after{content:''}.ss-spotify:before,.ss-spotify.right:after{content:''}.ss-lastfm:before,.ss-lastfm.right:after{content:''}.ss-soundcloud:before,.ss-soundcloud.right:after{content:''}.ss-link:before,.ss-link.right:after{content:'🔗'}.ss-phone:before,.ss-phone.right:after{content:'📞'}.ss-mail:before,.ss-mail.right:after{content:'✉'}.ss-like:before,.ss-like.right:after{content:'👍'}.ss-rss:before,.ss-rss.right:after{content:''}.ss-share:before,.ss-share.right:after{content:''}.ss-apple:before,.ss-apple.right:after{content:''}.ss-microsoft:before,.ss-microsoft.right:after{content:''}.ss-windows:before,.ss-windows.right:after{content:''}.ss-android:before,.ss-android.right:after{content:''}.ss-blackberry:before,.ss-blackberry.right:after{content:''}
+
+/* Legacy */
+.ss-fivehundredpx:before,.ss-fivehundredpx.right:after{content:''}
