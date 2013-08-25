@@ -154,13 +154,13 @@ h3.opensource {
     -webkit-font-smoothing: subpixel-antialiased;
 }
 
-h3.home-blog {
+h3.home-title {
     font-size: 24px;
     font-weight: bold;
     padding-bottom: 10px;
 }
 
-.opensource-list h3.home-blog {
+.opensource-list h3.home-title {
     margin: 0;
     padding-bottom: 0px;
     padding-top: 0px;
@@ -282,13 +282,13 @@ p a:hover, p a:active {
     text-decoration: none;
 }
 
-.blog h2 a, .home-blog a, .blog h2 a:visited, .home-blog a:visited {
+.blog h2 a, .home-title a, .blog h2 a:visited, .home-title a:visited {
     color: #ff4200;
     text-decoration: none;
     line-height: 36px;
 }
 
-.blog h2 a:hover, .home-blog a:hover, .blog h2 a:active, .home-blog a:active {
+.blog h2 a:hover, .home-title a:hover, .blog h2 a:active, .home-title a:active {
     color: #444444;
 }
 
