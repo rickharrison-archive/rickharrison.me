@@ -235,6 +235,10 @@ p a:hover, p a:active {
 
 /* Blog */
 
+.blog {
+    max-width: 600px;
+}
+
 .blog h2 {
     font-size: 30px;
     font-weight: bold;
@@ -244,6 +248,12 @@ p a:hover, p a:active {
 .blog p {
     font-size: 18px;
     text-rendering: optimizeLegibility;
+}
+
+.post h2 {
+    color: #ff4200;
+    font-size: 36px;
+    margin-bottom: 30px;
 }
 
 /* Pygments */
