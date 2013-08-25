@@ -186,6 +186,33 @@ h3.home-title {
     margin-bottom: 16px;
 }
 
+.side-content {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    float: left;
+    padding: 0 12px 0 17px;
+    width: 50%;
+}
+
+a.side-screenshot, a.side-screenshot:visited {
+    background: #e2e2e2;
+    display: block;
+    margin: 4px 0px 10px -17px;
+    max-width: 458px;
+    padding: 5px;
+}
+
+a.side-screenshot:hover, a.side-screenshot:active {
+    background: #444444;
+}
+
+.side-screenshot img {
+    display: block;
+    width: 100%;
+}
+
 .work-list {
     font-size: 0;
     padding-top: 10px;
@@ -227,21 +254,6 @@ a.screenshot, a.screenshot:visited {
 }
 
 a.screenshot:hover, a.screenshot:active {
-    background: #444444;
-}
-
-a.side-screenshot, a.side-screenshot:visited {
-    background: #e2e2e2;
-    display: block;
-    float: left;
-    height: 258px;
-    margin-right: 29px;
-    margin-top: 4px;
-    padding: 5px;
-    width: 458px;
-}
-
-a.side-screenshot:hover, a.side-screenshot:active {
     background: #444444;
 }
 
@@ -313,6 +325,21 @@ p a:hover, p a:active {
     color: #ff4200;
     font-size: 36px;
     margin-bottom: 30px;
+}
+
+/*
+ * Media Queries
+ */
+
+@media (max-width: 1122px) {
+    .side-content {
+        padding: 0;
+        width: 100%;
+    }
+
+    a.side-screenshot, a.side-screenshot:visited {
+        margin-left: 0;
+    }
 }
 
 /* Pygments */
