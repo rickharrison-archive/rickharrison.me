@@ -167,11 +167,6 @@ h3.home-blog {
     line-height: 22px;
 }
 
-.section   {
-    margin: 30px 0 50px 365px;
-    width: 961px;
-}
-
 span.highlight {
     background: #FF4200;
     color: #FFFFFF;
@@ -181,33 +176,6 @@ span.highlight {
 
 .opensource-list {
     padding-top: 10px;
-}
-
-/* Item Lists */
-
-.item_list {
-    display: block;
-    margin: 0px 0px 15px 0px;
-}
-
-.item_list li {
-    float: left;
-    margin: 0px 0px 0px 24px;
-    width: 222px;
-}
-
-.item_list li.item_list_first {
-    margin: 0px;
-}
-
-.item_list p {
-    font-size: 14px;
-    line-height: 18px;
-    margin-bottom: 15px;
-}
-
-.item_list p.media-links {
-    line-height: 22px;
 }
 
 a.screenshot, a.screenshot:visited {
@@ -221,14 +189,6 @@ a.screenshot, a.screenshot:visited {
 
 a.screenshot:hover, a.screenshot:active {
     background: #444444;
-}
-
-.item_list_spacer {
-    background: #CBCBCB;
-    border-bottom: 1px solid #FFFFFF;
-    height: 1px;
-    margin: 0 auto 30px auto;
-    width: 640px;
 }
 
 /* Links */
