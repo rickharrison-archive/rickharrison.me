@@ -126,44 +126,50 @@ h3.opensource {
     -webkit-font-smoothing: subpixel-antialiased;
 }
 
-/* Menu */
-
-#menu {
-    display: none;
+h3.home-blog {
+    font-size: 24px;
+    font-weight: bold;
     padding-bottom: 10px;
-    margin-top: 20px;
-    margin-bottom: 0px;
-    text-align: center;
-}
-
-#menu span.menu_spacer {
-    border-left: 1px solid #CBCBCB;
-    border-right: 1px solid #FFFFFF;
-    width: 1px;
-}
-
-#menu a, #menu a:visited {
-    border-bottom: 1px dotted #444444;
-    color: #41b3ee;
-    font-size: 20px;
-    margin: 0px 20px;
-    text-decoration: none;
-}
-
-#menu a:hover, #menu a:active {
-    color: #19272d;
-    text-decoration: none;
 }
 
 /* Sections */
 
+.content {
+    margin: 28px 44px 0 365px;
+    max-width: 960px;
+}
+
+.content h2 {
+    padding-top: 14px;
+}
+
+.work-list {
+    font-size: 0;
+    padding-top: 10px;
+    margin-left: -24px;
+}
+
+.work-list li {
+    display: inline-block;
+    margin: 0;
+    padding: 0 0 26px 24px;
+    vertical-align: top;
+    width: 222px;
+}
+
+.work-list p {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 15px;
+}
+
+.work-list p.media-links {
+    line-height: 22px;
+}
+
 .section   {
     margin: 30px 0 50px 365px;
     width: 961px;
-}
-
-#work {
-    margin-top: 40px;
 }
 
 span.highlight {
@@ -257,13 +263,13 @@ p a:hover, p a:active {
     text-decoration: none;
 }
 
-.blog h2 a, .blog h2 a:visited {
+.blog h2 a .home-blog a, .blog h2 a:visited, .home-blog a:visited {
     color: #ff4200;
     text-decoration: none;
     line-height: 36px;
 }
 
-.blog h2 a:hover, .blog h2 a:active {
+.blog h2 a:hover, .home-blog a:hover, .blog h2 a:active, .home-blog a:active {
     color: #444444;
 }
 
