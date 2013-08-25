@@ -43,7 +43,7 @@ p {
 }
 
 .header-wrap {
-    margin-top: -280px;
+    margin-top: -240px;
     position: absolute;
     text-align: center;
     top: 50%;
@@ -175,6 +175,10 @@ h3.home-title {
 
 .content h2 {
     padding-top: 14px;
+}
+
+.read-more {
+    margin-top: -20px;
 }
 
 .side-list {
