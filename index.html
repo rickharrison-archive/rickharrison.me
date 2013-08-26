@@ -6,7 +6,8 @@ title: Rick Harrison
 <h2><span>Latest Blog Post</span></h2>
 
 {% for post in site.posts limit:1 %}
-    <h3 class="home-title"><a href="{{ post.url | remove: '.html' }}">{{ post.title }}</a></h3>
+    <h3 class="home-title no-padding"><a href="{{ post.url | remove: '.html' }}">{{ post.title }}</a></h3>
+    <h4>{{ post.date | date: "%B %Y" }}</h4>
     {{ post.excerpt }}
 
     <p class="read-more"><a href="{{ post.url | remove: '.html' }}">Read more</a></p>

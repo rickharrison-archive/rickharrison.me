@@ -7,7 +7,8 @@ layout: default
     <ul>
     {% for post in site.posts %}
         <li>
-            <h2><a href="{{ post.url | remove: '.html' }}">{{ post.title }}</a></h2>
+            <h2 class="no-padding"><a href="{{ post.url | remove: '.html' }}">{{ post.title }}</a></h2>
+            <p>{{ post.date | date: "%B %Y" }}</p>
             {{ post.content }}
         </li>
     {% endfor %}
