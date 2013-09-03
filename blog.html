@@ -9,7 +9,9 @@ layout: default
         <li>
             <h2 class="no-padding"><a href="{{ post.url | remove: '.html' }}">{{ post.title }}</a></h2>
             <p>{{ post.date | date: "%B %Y" }}</p>
-            {{ post.content }}
+            {{ post.excerpt }}
+
+            <p class="read-more"><a href="{{ post.url | remove: '.html' }}">Read more</a></p>
         </li>
     {% endfor %}
     </ul>
