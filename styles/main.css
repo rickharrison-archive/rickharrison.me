@@ -268,7 +268,10 @@ span.highlight {
 }
 
 a.screenshot, a.screenshot:visited {
-    background: #E2E2E2;
+    background-color: #E2E2E2;
+    background-position: 5px;
+    background-repeat: no-repeat;
+    background-size: 212px 159px;
     display: block;
     height: 159px;
     margin: 0px 0px 6px 0px;
@@ -277,7 +280,7 @@ a.screenshot, a.screenshot:visited {
 }
 
 a.screenshot:hover, a.screenshot:active {
-    background: #444444;
+    background-color: #444444;
 }
 
 /* Links */
@@ -361,8 +364,38 @@ p a:hover, p a:active {
 }
 
 /*
+ * Screenshots
+ */
+
+.sincerely-ink { background-image: url('/images/work/ink.png'); }
+.zappos-iphone { background-image: url('/images/work/zappos_iphone.png'); }
+.postagram { background-image: url('/images/work/postagram_iphone.png'); }
+.sincerely-ship { background-image: url('/images/work/sincerely_ship.png'); }
+.zappos-ipad { background-image: url('/images/work/zappos_ipad.png'); }
+.accuweather-quick { background-image: url('/images/work/quick_iphone.png'); }
+.popbooth { background-image: url('/images/work/popbooth_ios.png'); }
+.accuweather-ipad { background-image: url('/images/work/accuweather_ipad.png'); }
+.trackthepack { background-image: url('/images/work/trackthepack_iphone.png'); }
+.mlbtr { background-image: url('/images/work/mlbtr_iphone.png'); }
+.accuweather-iphone { background-image: url('/images/work/accuweather_iphone.png'); }
+
+/*
  * Media Queries
  */
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+    .sincerely-ink { background-image: url('/images/work/ink@2x.png'); }
+    .zappos-iphone { background-image: url('/images/work/zappos_iphone@2x.png'); }
+    .postagram { background-image: url('/images/work/postagram_iphone@2x.png'); }
+    .sincerely-ship { background-image: url('/images/work/sincerely_ship@2x.png'); }
+    .zappos-ipad { background-image: url('/images/work/zappos_ipad@2x.png'); }
+    .accuweather-quick { background-image: url('/images/work/quick_iphone@2x.png'); }
+    .popbooth { background-image: url('/images/work/popbooth_ios@2x.png'); }
+    .accuweather-ipad { background-image: url('/images/work/accuweather_ipad@2x.png'); }
+    .trackthepack { background-image: url('/images/work/trackthepack_iphone@2x.png'); }
+    .mlbtr { background-image: url('/images/work/mlbtr_iphone@2x.png'); }
+    .accuweather-iphone { background-image: url('/images/work/accuweather_iphone@2x.png'); }
+}
 
 @media (max-width: 1122px) {
     .side-content {
