@@ -363,6 +363,11 @@ p a:hover, p a:active {
     font-size: 16px;
 }
 
+#disqus_thread {
+    margin-bottom: 30px;
+    margin-top: 60px;
+}
+
 /*
  * Screenshots
  */
