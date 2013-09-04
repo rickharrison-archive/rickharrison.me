@@ -58,6 +58,7 @@ p {
 
 .header-logo {
     background: url('/images/ninerobot.png') no-repeat;
+    background-size: 80px 228px;
     display: block;
     height: 114px;
     margin: 0 auto 15px auto;
@@ -68,6 +69,7 @@ p {
 .header-logo span {
     background: url('/images/ninerobot.png') no-repeat;
     background-position: 0 -114px;
+    background-size: 80px 228px;
     bottom: 0;
     left: 0;
     position: absolute;
@@ -389,6 +391,9 @@ p a:hover, p a:active {
  */
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+    .header-logo { background-image: url('/images/ninerobot@2x.png'); }
+    .header-logo span { background-image: url('/images/ninerobot@2x.png'); }
+
     .sincerely-ink { background-image: url('/images/work/ink@2x.png'); }
     .zappos-iphone { background-image: url('/images/work/zappos_iphone@2x.png'); }
     .postagram { background-image: url('/images/work/postagram_iphone@2x.png'); }
