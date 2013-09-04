@@ -1,2 +1,3 @@
 markdown: redcarpet
 permalink: /:title.html
+exclude: [logo.psd, logo2.psd, ninerobot.psd, server.cfg]
