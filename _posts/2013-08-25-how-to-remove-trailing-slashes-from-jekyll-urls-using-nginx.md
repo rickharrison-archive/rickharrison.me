@@ -4,7 +4,7 @@ title: How to remove trailing slashes from Jekyll URLs using Nginx
 date: 2013-09-04 20:00:00 -0700
 ---
 
-Recently, I started using [Jekyll](http://jekyllrb.com/) to generate my blog and site. I wanted to have clean URLs without a .html extension or a trailng slash at the end. Unfortunately, Jekyll makes it difficult to accomplish both of these objectives simultaneously.
+Recently, I started using [Jekyll](http://jekyllrb.com/) to generate my blog and site. I wanted to have clean URLs without a .html extension or a trailing slash at the end. Unfortunately, Jekyll makes it difficult to accomplish both of these objectives simultaneously.
 
 The easiest way to do this is to have jekyll think you are serving up files with the .html extension and then remove it using Nginx. To do this, you need to have a permalink setting in your `_config.yml` to be similar to the following:
 
