@@ -531,6 +531,7 @@ pre {
     -o-border-radius: 6px;
     margin-bottom: 30px;
     padding: 15px 20px;
+    overflow: auto;
 }
 
 pre.code-no-margin {
