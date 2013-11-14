@@ -349,6 +349,10 @@ p a:hover, p a:active {
     text-rendering: optimizeLegibility;
 }
 
+.post-list li {
+    margin-bottom: 70px;
+}
+
 .post h1 {
     color: #ff4200;
     font-size: 36px;
@@ -556,7 +560,7 @@ p code {
 
 .hll {  }
 .c { color: #999988; font-style: italic } /* Comment */
-.err { border: 1px solid #a61717 } /* Error */
+.err { /*border: 1px solid #a61717*/ } /* Error */
 .k { font-weight: bold; } /* Keyword */
 .o { } /* Operator */
 .cm { color: #999988; font-style: italic } /* Comment.Multiline */
