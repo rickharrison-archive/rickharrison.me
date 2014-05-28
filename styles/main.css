@@ -364,6 +364,18 @@ p a:hover, p a:active {
     padding-top: 15px;
 }
 
+.post h2 {
+    color: #ff4200;
+    font-size: 28px;
+    padding: 0 0 15px 0;
+}
+
+.post h3 {
+    color: #ff4200;
+    font-size: 24px;
+    padding: 0 0 15px 0;
+}
+
 .close-link {
     font-size: 14px;
     margin-top: -20px;
