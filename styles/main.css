@@ -376,6 +376,12 @@ p a:hover, p a:active {
     padding: 0 0 15px 0;
 }
 
+.post li {
+    line-height: 32px;
+    list-style: inside;
+    list-style-type: disc;
+}
+
 .close-link {
     font-size: 14px;
     margin-top: -20px;
@@ -568,8 +574,9 @@ code {
     line-height: 16px;
 }
 
-p code {
+p code, li code {
     background: #f0eded;
+    border-radius: 4px;
     font-size: 14px;
     padding: 5px 5px;
 }
