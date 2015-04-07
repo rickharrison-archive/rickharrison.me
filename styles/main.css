@@ -270,6 +270,7 @@ span.highlight {
     background: #FF4200;
     color: #FFFFFF;
     padding: 1px 5px;
+    white-space: nowrap;
     -webkit-font-smoothing: subpixel-antialiased;
 }
 
